@@ -1,0 +1,38 @@
+{
+  "description": "Generic Data Center file example",
+  "version": "1.0",
+  "objects": [
+    {
+      "id": "sg-0983bac6efa0c4afb",
+      "description": "sg-0983bac6efa0c4afb",
+      "ranges": [
+        "10.42.11.21"
+      ],
+      "name": "sg-0983bac6efa0c4afb"
+    },
+    {
+      "id": "lab1-vm2-linux_host_sg",
+      "description": "lab1-vm2-linux_host_sg",
+      "ranges": [
+        "10.42.11.248"
+      ],
+      "name": "lab1-vm2-linux_host_sg"
+    },
+    {
+      "id": "sg-09ca99ef162ba452e",
+      "description": "sg-09ca99ef162ba452e",
+      "ranges": [
+        "10.42.11.248"
+      ],
+      "name": "sg-09ca99ef162ba452e"
+    },
+    {
+      "id": "lab1-vm1-linux_host_sg",
+      "description": "lab1-vm1-linux_host_sg",
+      "ranges": [
+        "10.42.11.21"
+      ],
+      "name": "lab1-vm1-linux_host_sg"
+    }
+  ]
+}

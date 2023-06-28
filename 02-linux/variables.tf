@@ -16,3 +16,7 @@ variable "allow_src_cidr" {
 variable "key_name" {
   default = "asg-key"
 }
+
+variable "security_group_id" {
+ 
+}

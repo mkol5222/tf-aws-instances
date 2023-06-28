@@ -18,6 +18,8 @@ module "linux1" {
     vpc_id = module.vpc.vpc_id
     subnet_id = module.vpc.public_subnet_id
     allow_src_cidr = var.allow_src_cidr
+    
+    security_group_id = module.vpc.default_security_group_id
 }
 
 module "linux2" {
@@ -28,4 +30,6 @@ module "linux2" {
     vpc_id = module.vpc.vpc_id
     subnet_id = module.vpc.public_subnet_id
     allow_src_cidr = var.allow_src_cidr
+
+    security_group_id = module.vpc.default_security_group_id
 }

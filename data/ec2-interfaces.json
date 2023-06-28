@@ -1,0 +1,130 @@
+{
+    "NetworkInterfaces": [
+        {
+            "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-249-0-97.eu-west-1.compute.amazonaws.com",
+                "PublicIp": "3.249.0.97"
+            },
+            "Attachment": {
+                "AttachTime": "2023-06-27T09:33:47+00:00",
+                "AttachmentId": "eni-attach-0bfaaf325180db919",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "NetworkCardIndex": 0,
+                "InstanceId": "i-052d0e531aae95de6",
+                "InstanceOwnerId": "659316480061",
+                "Status": "attached"
+            },
+            "AvailabilityZone": "eu-west-1a",
+            "Description": "",
+            "Groups": [
+                {
+                    "GroupName": "lab1-vm1-linux_host_sg",
+                    "GroupId": "sg-0983bac6efa0c4afb"
+                }
+            ],
+            "InterfaceType": "interface",
+            "Ipv6Addresses": [],
+            "MacAddress": "02:3a:49:2b:e4:33",
+            "NetworkInterfaceId": "eni-0071e389ff0506fe7",
+            "OwnerId": "659316480061",
+            "PrivateDnsName": "ip-10-42-11-21.eu-west-1.compute.internal",
+            "PrivateIpAddress": "10.42.11.21",
+            "PrivateIpAddresses": [
+                {
+                    "Association": {
+                        "IpOwnerId": "amazon",
+                        "PublicDnsName": "ec2-3-249-0-97.eu-west-1.compute.amazonaws.com",
+                        "PublicIp": "3.249.0.97"
+                    },
+                    "Primary": true,
+                    "PrivateDnsName": "ip-10-42-11-21.eu-west-1.compute.internal",
+                    "PrivateIpAddress": "10.42.11.21"
+                }
+            ],
+            "RequesterManaged": false,
+            "SourceDestCheck": true,
+            "Status": "in-use",
+            "SubnetId": "subnet-0ecd958a1e145d2f9",
+            "TagSet": [
+                {
+                    "Key": "Owner",
+                    "Value": "mkoldov@checkpoint.com"
+                },
+                {
+                    "Key": "UserId",
+                    "Value": "659316480061:mkoldov@checkpoint.com"
+                },
+                {
+                    "Key": "Schedule",
+                    "Value": "cp-office-hours"
+                }
+            ],
+            "VpcId": "vpc-04bd7e4b8810e3197"
+        },
+        {
+            "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-63-33-45-97.eu-west-1.compute.amazonaws.com",
+                "PublicIp": "63.33.45.97"
+            },
+            "Attachment": {
+                "AttachTime": "2023-06-27T09:34:27+00:00",
+                "AttachmentId": "eni-attach-0aa53913c801b3323",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "NetworkCardIndex": 0,
+                "InstanceId": "i-06507e84a123cf1dc",
+                "InstanceOwnerId": "659316480061",
+                "Status": "attached"
+            },
+            "AvailabilityZone": "eu-west-1a",
+            "Description": "",
+            "Groups": [
+                {
+                    "GroupName": "lab1-vm2-linux_host_sg",
+                    "GroupId": "sg-09ca99ef162ba452e"
+                }
+            ],
+            "InterfaceType": "interface",
+            "Ipv6Addresses": [],
+            "MacAddress": "02:67:37:14:40:d3",
+            "NetworkInterfaceId": "eni-06747b296e5b1fd1f",
+            "OwnerId": "659316480061",
+            "PrivateDnsName": "ip-10-42-11-248.eu-west-1.compute.internal",
+            "PrivateIpAddress": "10.42.11.248",
+            "PrivateIpAddresses": [
+                {
+                    "Association": {
+                        "IpOwnerId": "amazon",
+                        "PublicDnsName": "ec2-63-33-45-97.eu-west-1.compute.amazonaws.com",
+                        "PublicIp": "63.33.45.97"
+                    },
+                    "Primary": true,
+                    "PrivateDnsName": "ip-10-42-11-248.eu-west-1.compute.internal",
+                    "PrivateIpAddress": "10.42.11.248"
+                }
+            ],
+            "RequesterManaged": false,
+            "SourceDestCheck": true,
+            "Status": "in-use",
+            "SubnetId": "subnet-0ecd958a1e145d2f9",
+            "TagSet": [
+                {
+                    "Key": "Owner",
+                    "Value": "mkoldov@checkpoint.com"
+                },
+                {
+                    "Key": "Schedule",
+                    "Value": "cp-office-hours"
+                },
+                {
+                    "Key": "UserId",
+                    "Value": "659316480061:mkoldov@checkpoint.com"
+                }
+            ],
+            "VpcId": "vpc-04bd7e4b8810e3197"
+        }
+    ]
+}
