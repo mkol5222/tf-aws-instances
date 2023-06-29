@@ -14,6 +14,12 @@ $res = Invoke-LMFunction CHKP_Test_Lambda_Function -LogType Tail -Payload ( @{ke
 $res 
 Get-Base64Decoded $res.LogResult
 
+# logs
+Get-CWLFilteredLogEvent -LogGroupName /aws/lambda/CHKP_Test_Lambda_Function | Foreach-Object Events
+
+#
+Write-Host
+
 $StreamReader = [System.IO.StreamReader]::new($res.Payload)
 $resp = $StreamReader.ReadToEnd() | ConvertFrom-Json
 $resp.sgs.objects
