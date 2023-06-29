@@ -102,3 +102,30 @@ resource "aws_security_group" "default" {
     Environment = "${var.environment}"
   }
 }
+
+resource "aws_security_group" "one_more" {
+  name        = "${var.environment}-one-more-sg"
+  description = "One More SG"
+  vpc_id      = aws_vpc.vpc.id
+  depends_on = [
+    aws_vpc.vpc
+  ]
+
+  #   ingress {
+  #   from_port = "0"
+  #   to_port   = "0"
+  #   protocol  = "-1"
+  #   self      = true
+  # }
+
+  # egress {
+  #   from_port = "0"
+  #   to_port   = "0"
+  #   protocol  = "-1"
+  #   self      = "true"
+  # }
+
+  tags = {
+    Environment = "${var.environment}"
+  }
+}

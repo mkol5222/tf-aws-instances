@@ -19,7 +19,7 @@ module "linux1" {
     subnet_id = module.vpc.public_subnet_id
     allow_src_cidr = var.allow_src_cidr
     
-    security_group_id = module.vpc.default_security_group_id
+    security_group_id = module.vpc.one_more_security_group_id
 }
 
 module "linux2" {
@@ -31,5 +31,9 @@ module "linux2" {
     subnet_id = module.vpc.public_subnet_id
     allow_src_cidr = var.allow_src_cidr
 
-    security_group_id = module.vpc.default_security_group_id
+    security_group_id = module.vpc.one_more_security_group_id
+}
+
+module "lambda" {
+    source = "./03-lambda"
 }
