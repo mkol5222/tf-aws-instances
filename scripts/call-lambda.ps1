@@ -8,6 +8,8 @@ function Get-Base64Decoded {
     return $decoded
 }
 
+# https://www.techtarget.com/searchaws/tutorial/Follow-this-step-by-step-guide-to-use-AWS-Lambda-with-PowerShell
+
 $res = Invoke-LMFunction CHKP_Test_Lambda_Function -LogType Tail -Payload ( @{key1 = "aaa"}|ConvertTo-Json)
 $res 
 Get-Base64Decoded $res.LogResult
